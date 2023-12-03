@@ -1,0 +1,44 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(206, 206, 206); /* Change to your preferred background color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .4); /* Add a subtle shadow */
+    z-index: 999; /* Ensure it's above other content */
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    transition: all 0.5s ease;
+    justify-content: space-between;
+}
+
+.navbar-logo {
+    /* Style for your logo or brand */
+    font-size: 22px;
+    /* Add more styles as needed */
+}
+
+.navbar-menu {
+    /* Style for your menu items */
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-menu li {
+    font-size: 25px;
+    margin-left: 20px; /* Adjust spacing between menu items */
+}
+
+.navbar-menu li a {
+    text-decoration: none;
+    color: #333; /* Set the color of your menu links */
+    /* Add more styles as needed */
+    transition: all 0.3s ease;
+}
+
+.navbar-menu li a:hover {
+    color: #f00;
+}
