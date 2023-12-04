@@ -1,7 +1,12 @@
 body {
+    background: #1E1E1E;
     height: 10000px;
+    color:  #FFFFFF;
 }
 
+html{
+    scroll-behavior: smooth;
+}
 * {
     margin: 0;
     padding: 0;
@@ -14,8 +19,8 @@ body {
     pointer-events: none;
     width: 20px;
     height: 20px;
-    background-color: rgba(255, 255, 255, 0.377);
-    border: 1px solid #000;
+    background-color: rgba(180, 82, 180, 0.548);
+    border: 1px solid white;
     border-radius: 50%;
     z-index: 9999;
     transform: translate(-50%, -50%);

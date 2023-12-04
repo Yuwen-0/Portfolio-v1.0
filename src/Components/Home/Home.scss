@@ -1,0 +1,27 @@
+.home{
+    height: 682px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nameSpan{
+    color: #FAFAFA ;
+    font-size: 100px;
+    font-weight: bold;
+}
+
+.name{
+    color: #4B0082    !important;
+    font-size: 100px;
+    font-weight: bold;
+}   
+
+.job::after{
+    content: "Front End developer";
+    color: #666;
+    margin: 0 0 0 5px;
+    display: inline-block;
+    height: 2px;
+}
