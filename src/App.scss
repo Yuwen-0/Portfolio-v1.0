@@ -1,12 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
+
 body {
     background: #1E1E1E;
     height: 10000px;
     color:  #FFFFFF;
+    font-family: 'Caveat', cursive;    
 }
 
 html{
     scroll-behavior: smooth;
 }
+
+#root {
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    & > * {
+        scroll-snap-align: start;
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -14,12 +26,12 @@ html{
 
 .cursor-follower {
     position: fixed;
-    top: 0;
-    left: 0;
+    top: -50px;
+    left: -50px;
     pointer-events: none;
     width: 20px;
     height: 20px;
-    background-color: rgba(180, 82, 180, 0.548);
+    background-color: rgba(255, 255, 255, 0.171);
     border: 1px solid white;
     border-radius: 50%;
     z-index: 9999;

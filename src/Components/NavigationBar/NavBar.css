@@ -28,8 +28,11 @@
 }
 
 .navbar-menu li {
-    font-size: 25px;
+    font-size: 35px;
     margin-left: 20px; /* Adjust spacing between menu items */
+    transition: all 0.3s ease;
+    padding: 3px 6px 3px 3px;
+    border: 1px solid transparent;
 }
 
 .navbar-menu li a {
@@ -39,6 +42,10 @@
     transition: all 0.3s ease;
 }
 
-.navbar-menu li a:hover {
-    color: #E74C3C ;
+.navbar-menu li:hover {
+    border-color: rgb(181, 135, 226);
+}
+
+.navbar-menu li:hover a {
+    color: rgb(185, 148, 223);
 }

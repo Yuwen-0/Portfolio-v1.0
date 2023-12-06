@@ -1,5 +1,5 @@
 .home{
-    height: 682px;
+    height: 760px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7,21 +7,60 @@
 }
 
 .nameSpan{
-    color: #FAFAFA ;
-    font-size: 100px;
-    font-weight: bold;
+    color: rgb(169, 74, 238);
 }
 
 .name{
-    color: #4B0082    !important;
-    font-size: 100px;
+    font-size: 40px;
     font-weight: bold;
 }   
 
-.job::after{
-    content: "Front End developer";
-    color: #666;
-    margin: 0 0 0 5px;
+.job{
+    position: relative;
     display: inline-block;
-    height: 2px;
+    width: 400px;
+    text-align: right;
+    color: #FAFAFA ;
+    font-weight: bold;
+}
+
+.jobContainer{
+    font-size: 40px;
+    display: flex;
+    width: 1000px;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.jobSpan{
+    display: inline;
+    width: 600px;
+    text-align: left;
+    position: relative;
+    transition: all 0.5s ease;
+    color: rgb(169, 74, 238);
+    display: inline-block;
+}
+
+.sceneOut{
+    animation: sceneOut 1s ease;
+}
+
+@keyframes sceneOut {
+    0% {
+        transform: translateY(0);
+    }
+    30%{
+        transform: translateY(60px);
+        opacity: 0;
+    }
+    60%{
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

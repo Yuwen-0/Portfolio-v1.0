@@ -6,9 +6,11 @@ import PropTypes from 'prop-types';
 function Cursor({cursorSize}) {
 
       const handleMouseMove = (event) => {
-        const follower = document.querySelector(".cursor-follower");
-        follower.style.left = `${event.clientX}px`;
-        follower.style.top = `${event.clientY}px`;
+        setTimeout(() => {
+          const cursor = document.querySelector(".cursor-follower");
+          cursor.style.top = `${event.clientY}px`;
+          cursor.style.left = `${event.clientX}px`;
+        }, 15);
       };
       useEffect(() => {
         document.body.addEventListener("mousemove", handleMouseMove);

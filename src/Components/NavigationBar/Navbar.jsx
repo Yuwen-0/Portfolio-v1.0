@@ -38,7 +38,7 @@ export default function Navbar({makeCircleBigger,makeCircleSmaller}) {
         <>
             <div className="navbar">
                 <div onMouseEnter={makeCircleBigger} onMouseLeave={makeCircleSmaller} className="navbar-logo">
-                    <h1>Logo</h1>
+                    <h1>Yuwen</h1>
                 </div>
                 <div>
                     <ul className="navbar-menu">
