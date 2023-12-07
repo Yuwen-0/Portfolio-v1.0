@@ -1,3 +1,64 @@
+@mixin upToDownRightArrow {
+    content: "↪";
+    color: rgb(169, 74, 238);
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+}
+
 .about{
+    padding: 0 0 0 18%;
     height: 682px;
+    position: relative;
+}
+
+.purpleRod{
+    position: absolute;
+    height: 1050px;
+    top: 0;
+    left: 120px;
+}
+
+.infoList{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    font:bold 40px 'Caveat', cursive;
+    color: #FAFAFA;
+    gap: 50px;
+}
+
+.infoItem::before{
+    content: "\2022";
+    color: rgb(169, 74, 238);
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+}
+
+.infoTitle{
+    color: rgb(169, 74, 238);
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.skillList{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    font:bold 30px 'Caveat', cursive;
+    color: #FAFAFA;
+    gap: 10px;
+    padding-left:40px ;
+}
+
+.skill::before{
+    @include upToDownRightArrow;
+}
+
+.columnsContainer{
+    display: flex;
+    flex-direction: row;
 }
