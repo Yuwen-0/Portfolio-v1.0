@@ -1,41 +1,37 @@
-@mixin upToDownRightArrow {
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+@mixin upToDownRightArrow($width: 2em) {
     content: "↪";
     color: rgb(169, 74, 238);
     font-weight: bold;
     display: inline-block; 
-    width: 1em;
-    margin-left: -1em;
+    font-size: 40px;
+    width: $width;
+}
+
+.info{
+    font-size: 2em;
+    display: flex;
+    gap: 20px;
+}
+
+.info::before{
+    @include upToDownRightArrow();
+    margin-right:-1.2em ;
 }
 
 .about{
-    padding: 0 0 0 18%;
+    padding: 0 0 0 12%;
     height: 682px;
     position: relative;
 }
 
 .purpleRod{
     position: absolute;
-    height: 1050px;
+    color: rgb(169, 74, 238);
+    height: 100%;
     top: 0;
     left: 120px;
-}
-
-.infoList{
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    font:bold 40px 'Caveat', cursive;
-    color: #FAFAFA;
-    gap: 50px;
-}
-
-.infoItem::before{
-    content: "\2022";
-    color: rgb(169, 74, 238);
-    font-weight: bold;
-    display: inline-block; 
-    width: 1em;
-    margin-left: -1em;
 }
 
 .infoTitle{
@@ -44,21 +40,20 @@
     font-size: 50px;
 }
 
-.skillList{
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    font:bold 30px 'Caveat', cursive;
-    color: #FAFAFA;
-    gap: 10px;
-    padding-left:40px ;
+.skill{
+    display: inline-block;
 }
 
-.skill::before{
-    @include upToDownRightArrow;
+.aboutMeParagraph{
+    font-size: 30px;
+    white-space: pre-wrap;
 }
 
-.columnsContainer{
-    display: flex;
-    flex-direction: row;
+.aboutMeParagraph:nth-child(1):before{
+    @include upToDownRightArrow(1.5em);
+    margin-right:-.2em ;
+}
+
+.dino{
+    border-radius: 10px;
 }

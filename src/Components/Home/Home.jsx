@@ -1,7 +1,7 @@
 import "./Home.scss";
 import { useEffect } from "react";
 
-    export default function Home() {
+    export default function Home({makeCircleBigger,setCursorColor, makeCircleSmaller,setCursorText}) {
     useEffect(() => {
         const jobSpanElement = document.querySelector(".jobSpan");
         const tags = [
@@ -23,8 +23,12 @@ import { useEffect } from "react";
             }, 200);
             tags.push(tags.shift());
             sceneOut()
-        }, 5000);
+        }, 3000);
     }, []);
+
+    function arrowButtonClick(e) {
+        window.scrollTo(0, 700)
+    }
 
     return (
         <div className="home section" id="Home">
@@ -33,6 +37,8 @@ import { useEffect } from "react";
                 <h1 className="job">I am a =&gt;</h1>
                 <h1 className="jobSpan">Front End Developer</h1>
             </div>
+            <h1 style={{marginTop: "10px",color: "gray"}}>Scroll down to see my work!</h1>
+            <button onClick={arrowButtonClick} onMouseEnter={() => makeCircleBigger()} onMouseLeave={() => makeCircleSmaller()} className="downArrowContainer"><span className="downArrow"></span></button>
         </div>
     );
 }

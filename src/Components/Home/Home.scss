@@ -4,6 +4,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    font-family: 'Caveat', cursive;
 }
 
 .nameSpan{
@@ -62,5 +63,55 @@
     100% {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+.downArrow{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: -15px;
+    transform: rotate(45deg);
+    border-bottom: 3px solid rgb(169, 74, 238);
+    border-right: 3px solid rgb(169, 74, 238);
+    transition:all 0.5s ease;
+    animation: bounce 1.5s linear infinite;
+}
+
+.downArrowContainer{
+    background-color: transparent !important;
+    margin-top: 10px;
+    border:0px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(0,110%);
+    width: 100px;
+    height: 100px;
+}
+
+.downArrowContainer:hover{
+    cursor: pointer;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translate(0, 0) rotate(45deg) ;
+    }
+    20% {
+        transform: translate(0, 30%) rotate(45deg) ;
+    }
+    40% {
+        transform: translate(0, 50%) rotate(45deg);
+    }
+    60% {
+        transform: translate(0, 30%) rotate(45deg);
+    }
+    80% {
+        transform: translate(0, 0) rotate(45deg);
+    }
+    100% {
+        transform: translate(0, 0%) rotate(45deg);
     }
 }

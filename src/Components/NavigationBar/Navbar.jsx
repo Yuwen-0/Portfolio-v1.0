@@ -37,13 +37,13 @@ export default function Navbar({makeCircleBigger,makeCircleSmaller}) {
     return (
         <>
             <div className="navbar">
-                <div onMouseEnter={makeCircleBigger} onMouseLeave={makeCircleSmaller} className="navbar-logo">
+                <div onMouseEnter={() => makeCircleBigger("60px","60px")} onMouseLeave={() => makeCircleSmaller()} className="navbar-logo">
                     <h1>Yuwen</h1>
                 </div>
-                <div>
+                <div> 
                     <ul className="navbar-menu">
                         {listItems.map((item) => (
-                            <li key={item}><a onMouseEnter={makeCircleBigger} onMouseLeave={makeCircleSmaller} href={`#${item}`}>{item}</a></li>
+                            <li key={item}><a onMouseEnter={() => makeCircleBigger("60px","60px")} onMouseLeave={() => makeCircleSmaller()} href={`#${item}`}>{item}</a></li>
                         ))}
                     </ul>
                 </div>

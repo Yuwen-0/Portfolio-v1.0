@@ -3,7 +3,7 @@ import{ useEffect } from 'react';
 
 import PropTypes from 'prop-types';
 
-function Cursor({cursorSize}) {
+function Cursor({cursorSize,currsorBG = "", cursorColor,cursorText = ""}) {
 
       const handleMouseMove = (event) => {
         setTimeout(() => {
@@ -20,14 +20,26 @@ function Cursor({cursorSize}) {
         }
       }, []);
 
+      const styles = {
+        color: cursorColor,
+        width: cursorSize.width,
+        height: cursorSize.height,
+        border: `2px solid ${cursorColor}`
+      }
+
     return (
-        <div className="cursor-follower" style={{ width: cursorSize.width, height: cursorSize.height }}></div>
+        <div className="cursor-follower" style={{...styles}}>
+          <p className='cursor-text'>{cursorText}</p>
+        </div>
     )
     
 }
 
 Cursor.propTypes = {
-  cursorSize: PropTypes.object
+  cursorSize: PropTypes.object,
+  currsorBG: PropTypes.string,
+  cursorColor: PropTypes.string,
+  cursorText: PropTypes.string
 }
 
 export default Cursor

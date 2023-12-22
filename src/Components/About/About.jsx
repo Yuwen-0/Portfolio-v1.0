@@ -1,43 +1,55 @@
 import "./About.scss"
 import PurpleRod from "../../assets/PurpleRod.svg"
+import DinoImage from "../../images/DinoGame.png"
 
 export default function About() {
     const skills = [
-        'npm', 'React.js', 'HTML5', 'CSS3', 'SASS', 'JavaScript (ES6+)', 'Git', 'GitHub',
-        'Visual Studio Code', 'Figma', 'Responsive Web Design', 'Node.js', 'Babel',
-        'Debugging Tools', 'Staying Updated', 'ESLint', 'Adaptability', 'Fluent English',
-        'Problem-Solving'
-    ];
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "React.js",
+        "Node.js",
+        "Git",
+        "GitHub",
+        "VS Code",
+        "npm",
+        "Jsx",
+        "SASS",
+    ]
+      
 
-    const columnCount = 3;
-    const columnSize = Math.ceil(skills.length / columnCount);
-    const columns = [];
-    for (let i = 0; i < columnCount; i++) {
-        columns.push(skills.slice(i * columnSize, (i + 1) * columnSize));
-    }
+         
+      
     return (
-        <div id="About" className="about section">
-            <img src={PurpleRod} className="purpleRod" />
-            <ul className="infoList">
-                <li className="infoItem skills">
-                    <span className="infoTitle">Skills & Technologies</span>
-                    <div className="columnsContainer">
-                        {columns.map((column, index) => (
-                            <ul key={index} className="skillList">
-                                {column.map((skill, idx) => (
-                                    <li key={idx} className="skill">{skill}</li>
-                                ))}
-                            </ul>
-                        ))}
-                    </div>
-                </li>
-                <li className="infoItem">
-                    <span className="infoTitle">About Me</span>
-                </li>
-                <li className="infoItem">
-                    Skill3
-                </li>
-            </ul>
-        </div>
-    )
-}
+            <dl id="About" className="about section">
+                <img src={PurpleRod} className="purpleRod" />
+                <dt className="infoTitle">Skills</dt>
+                <dd className="info">
+                    {skills.map((skill, index) => (
+                        <p className="skill" key={index}>{skill}</p>
+                    ))}
+                </dd>
+                <dt className="infoTitle">About Me</dt>
+                <dd>
+                    <p className="aboutMeParagraph">
+                    Hello, I&apos;m <strong>Halil İbrahim Alagül</strong>!  My programming adventure started with a <em>weird</em> story...
+                    </p>
+
+                    <p className="aboutMeParagraph">
+                    When the power went out, I had no choice but to play the dino game on Chrome. I was hooked! 
+                    </p>
+
+                    <p className="aboutMeParagraph">
+                    Even when the electricity came back, I kept playing—and then I got curious about hacking the game. 
+                    </p>
+
+                    <p className="aboutMeParagraph">
+                    That&apos;s when I discovered JavaScript and wrote my first 5 lines of code to speed up my dino. The rest is history! 
+                    </p>
+
+                    <img src={DinoImage} className="dino" />
+                </dd>
+            </dl>
+           );
+
+    }

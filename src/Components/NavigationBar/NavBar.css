@@ -24,7 +24,7 @@
     display: flex;
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 0; 
 }
 
 .navbar-menu li {
@@ -33,6 +33,7 @@
     transition: all 0.3s ease;
     padding: 3px 6px 3px 3px;
     border: 1px solid transparent;
+    border-radius: 10px; 
 }
 
 .navbar-menu li a {
