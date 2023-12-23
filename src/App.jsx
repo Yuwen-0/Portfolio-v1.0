@@ -11,6 +11,7 @@ function App() {
   const [cursorSize, setCursorSize] = useState({ width: '30px', height: '30px' });
   const [cursorText, setCursorText] = useState('');
   const [cursorColor, setCursorColor] = useState('white');
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const makeCircleBigger = (width="50px", height="50px") => {
     setCursorSize({ width: width, height: height });
@@ -22,11 +23,11 @@ function App() {
 
   return (
     <>
-      <NavBar makeCircleBigger={makeCircleBigger} makeCircleSmaller={makeCircleSmaller} />
+      <NavBar isModalOpen={isModalOpen} makeCircleBigger={makeCircleBigger} makeCircleSmaller={makeCircleSmaller} />
       <Cursor cursorText={cursorText} cursorColor={cursorColor} cursorSize={cursorSize} />
       <Home  setCursorColor={setCursorColor} setCursorText={setCursorText} makeCircleBigger={makeCircleBigger} makeCircleSmaller={makeCircleSmaller}/>
       <About/>
-      <Projects setCursorColor={setCursorColor} setCursorText={setCursorText} makeCircleBigger={makeCircleBigger} makeCircleSmaller={makeCircleSmaller}/>
+      <Projects setIsModalOpen={setIsModalOpen} setCursorColor={setCursorColor} setCursorText={setCursorText} makeCircleBigger={makeCircleBigger} makeCircleSmaller={makeCircleSmaller}/>
       <Contact/>
     </>
   );

@@ -11,11 +11,14 @@
   },
   "dependencies": {
     "gsap": "^3.12.3",
+    "jest": "^29.7.0",
     "mouse-follower": "^1.1.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@testing-library/react": "^14.1.2",
+    "@testing-library/user-event": "^14.5.1",
     "@types/react": "^18.2.37",
     "@types/react-dom": "^18.2.15",
     "@vitejs/plugin-react-swc": "^3.5.0",

@@ -154,3 +154,151 @@
 .links{
     font-size: 22px;
 }
+
+.fullProjectModal{
+    display: none; /* Hidden by default */
+    transition: all 0.5s;   
+    position: fixed; /* Stay in place */
+    z-index: 3; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    overflow-y: hidden;
+}
+
+.fullProject{
+    transform:  translate(0, -120%);
+    transition: all 1s;
+    position: relative;
+    background-color: #333;
+    border-radius: 40px;
+    color: black;
+    margin: 5% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #743591;
+    width: 90%; /* Could be more or less, depending on screen size */
+    height: 600px;
+}
+
+.close {
+    position: absolute;
+    top: 5px;
+    transition: all 0.5s;
+    right: 15px;
+    color: #ffffff;
+    float: right;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-open{
+    display: block;
+}
+
+.mainModalTitle{
+    font-size: 40px;
+    color: #743591;
+}
+
+.modal-content-open{
+    transform:  translate(0, 0);
+    display: flex;
+}
+
+.imageCollection{
+    display: flex;
+    position: relative;
+    margin: 50px auto;
+    scroll-behavior: smooth;
+    overflow-x: scroll;
+    height: 90%;
+    gap: 20px;
+    scroll-snap-type: x mandatory;
+}
+
+.imageCollection::-webkit-scrollbar{
+    display: none;
+}
+
+.modelImage{
+    scroll-snap-align: center;
+}
+
+.Arrow{
+    position: absolute;
+    top: 11.2%;
+    width: 50px;
+    height: 84%;
+    font-size: 50px;
+    border: 1px solid white;
+    background-color: transparent;
+    transition: all 0.2s;
+}
+
+.Arrow:hover{   
+    border: 1px solid black;
+    background-color: rgba(255, 255, 255, 0.459);
+    cursor: pointer;
+
+}
+
+.leftArrowButton{
+    border-radius: 20px 0 0  20px;
+}
+
+.rightArrowButton{
+    border-radius: 0 20px 20px 0;
+}
+
+.imageSwitch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    position: absolute;
+    top: 10px;
+    border-radius: 10px;
+    left: 39%;
+    background: #000;
+    width: 300px;
+    height: 50px;
+}
+
+.Switch{
+    width: 100px;
+    border: none;
+    font-weight: 800;
+    font-size: larger;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    transition: all 0.3s;
+    background-color: transparent;
+    height: 40px;
+}
+
+.Switch:hover{
+    cursor: pointer;
+    color: gray;
+    border-color: #743591;
+}
+
+.active{
+    color: #784291;
+    border-color: #784291;
+}
+
+.active:hover{
+    color: #5d3570;
+}
