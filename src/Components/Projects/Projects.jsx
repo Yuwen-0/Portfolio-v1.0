@@ -10,19 +10,22 @@ export default function Projects({makeCircleBigger,setCursorColor, makeCircleSma
             name: "Multi-Step Form",
             description : {
                 challanges: [
-                    "Challange 1",
-                    "Challange 2",
+                    "remaining data when step changes",
+                    "calculating total price mo / yr",
                 ],
                 technologies: [
                     "React",
                     "JavaScript",
+                    "Sass",
+                    "Html",
+                    "Css",
                 ],
                 links: {
-                    github: "https://github.com",
-                    live: "https://github.com",
+                    github: "https://github.com/Yuwen-0/Multi-step-form",
+                    live: "https://yuwen-0.github.io/Multi-step-form/",
                 },
             },
-            images:["src/images/ProjectPhotos/MultiStepForm/FullWide.png","src/images/ProjectPhotos/MultiStepForm/FullWideError.png","src/images/ProjectPhotos/FullWide.png"]
+            images:["src/images/ProjectPhotos/MultiStepForm/FullWide.png","src/images/ProjectPhotos/MultiStepForm/FullWideError.png","src/images/ProjectPhotos/MultiStepForm/Step2FullWide.png","src/images/ProjectPhotos/MultiStepForm/Step1MobileError.png","src/images/ProjectPhotos/MultiStepForm/Step2Mobile.png","src/images/ProjectPhotos/MultiStepForm/Step1Mobile.png"]
         },
         {
             name: "Multi-Step Form",

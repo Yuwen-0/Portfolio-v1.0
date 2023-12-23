@@ -1,16 +1,17 @@
 .project{
     display: flex;
-    align-items: center;
     flex-direction: column !important;
+    color: whitesmoke;
     background-color:#4b235e;
     border: 3px solid black;
     border-top-left-radius: 40px;
     border-bottom-left-radius: 40px;
-    padding: 15px;
+    padding: 25px;
     width: 20%;
+    font-size: larger;
     height:600px;
     transition: all 0.5s;
-
+    gap: 20px;
 }
 
 .project:hover{
@@ -55,7 +56,7 @@
     left: 50px;
     display:inline-block;
     z-index: 2;
-    transform: rotate(12deg);
+    transform: rotate(5deg);
     background-size:contain;
     top: 50px;
 };
@@ -63,19 +64,40 @@
 .image:nth-child(1){
     bottom: 50px;
     left: 50px;
-    z-index: 1;
+    z-index: 0;
     transform:rotate(5deg);
-    background: url("src/images/ProjectPhotos/FullWide.png") no-repeat;
     background-size:contain;
 };
 
-.image:nth-child(3){
-    right: 50px;
-    z-index: 1;
+.image:nth-child(5){
+    right: 120px;
+    width: 200px;
+    z-index: 3;
     transform: rotate(-5deg);
-    background: url("src/images/ProjectPhotos/FullWide.png") no-repeat;
     background-size:contain;
-    top: 150px;
+    top:60px;
+};
+
+.image:nth-child(4){
+    width: 200px;
+    z-index: 2;
+    bottom: 50px;
+    right: 250px;
+    rotate: 5deg;
+};
+
+.image:nth-child(3){
+    top: 230px;
+    left: 50px;
+    rotate: -10deg;
+};
+
+.image:nth-child(6){
+    z-index: 0;
+    top: 50px;
+    width: 200px;
+    right: 300px;
+    rotate: -10deg;
 };
 
 .projectContainer{
@@ -94,4 +116,41 @@
 
 .image:hover{
     cursor: pointer;
+}
+
+.mainProjectTitle{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(255, 138, 249);
+}   
+
+.subProjectTitle{
+    color: rgb(255, 138, 249)   ;
+}
+
+.list{
+    list-style:none;
+    padding-left: 20px;
+}
+
+.list li::before{
+    content: "\2022";
+    color: rgb(255, 138, 249);
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+}
+
+.links li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.links li a:hover{
+    color: rgb(255, 138, 249);
+}
+
+.links{
+    font-size: 22px;
 }
