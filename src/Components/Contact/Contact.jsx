@@ -12,9 +12,9 @@ export default function Contact() {
     }
 
     const Icons = {
-        Github: "./Github.png",
-        LinkedIn: ".//LinkedIn.png",
-        Upwork: "./Upwork.png",
+        Github: "./Github",
+        LinkedIn: ".//LinkedIn",
+        Upwork: "./Upwork",
     }
     return (
         <footer className="contact" id="Contact">
