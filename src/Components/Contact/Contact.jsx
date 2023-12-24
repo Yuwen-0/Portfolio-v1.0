@@ -1,12 +1,9 @@
 import "./Contact.scss"
-import GithubIcon from "/src/Components/Contact/Github.png";
-import LinkedinIcon from "/src/Components/Contact/LinkedIn.png";
-import UpworkIcon from "/src/Components/Contact/UpWork.png";
 
 export default function Contact() {
     const SocialMedia = {
-        Github: "https://github.com/ha376",
-        LinkedIn: "https://www.linkedin.com/in/ha376/",
+        Github: "https://github.com/Yuwen-0",
+        LinkedIn: "https://www.linkedin.com/in/halil-alagül-362a3b276/",
         Upwork: "https://www.upwork.com/freelancers/~019ecf46aceb5b9146",
     }
     const Contact = {
@@ -15,9 +12,9 @@ export default function Contact() {
     }
 
     const Icons = {
-        Github: GithubIcon,
-        LinkedIn: LinkedinIcon,
-        Upwork: UpworkIcon
+        Github: "/src/Components/Contact/Github.png",
+        LinkedIn: "/src/Components/Contact/LinkedIn.png",
+        Upwork: "/src/Components/Contact/UpWork.png"
     }
     return (
         <footer className="contact" id="Contact">
