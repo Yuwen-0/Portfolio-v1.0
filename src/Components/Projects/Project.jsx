@@ -5,6 +5,7 @@ import ImageCollection from './ImageCollection.jsx';
 export default function Project({setIsModalOpen,project,setCursorColor, makeCircleBigger, makeCircleSmaller,setCursorText}) {
 
     //Todo make diffrent divs to make mobile and desktop separate
+    //Todo make the contact section
 
     const modal = useRef(null);
     const modalContent = useRef(null);

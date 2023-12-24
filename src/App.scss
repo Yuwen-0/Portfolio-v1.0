@@ -2,9 +2,10 @@
 
 body {
     background: #1E1E1E;
-    height: 10000px;
+    height: fit-content;
     color:  #FFFFFF;
     font-family: 'Afacad', sans-serif;
+    overflow-x: hidden;
 }
 
 html{
