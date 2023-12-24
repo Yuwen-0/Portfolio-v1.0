@@ -1,7 +1,7 @@
 import "./Contact.scss"
 import GithubIcon from "./Github.png";
 import LinkedinIcon from "./LinkedIn.png";
-import UpworkIcon from "./UpWork.PNG";
+import UpworkIcon from "./UpWork.png";
 
 export default function Contact() {
     const SocialMedia = {
