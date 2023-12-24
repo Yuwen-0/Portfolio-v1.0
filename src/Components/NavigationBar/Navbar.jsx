@@ -1,6 +1,6 @@
-import "./Navbar.css";
 import { useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
+import "./Navbar.scss";
 export default function Navbar({isModalOpen,makeCircleBigger,makeCircleSmaller}) {
   const lastScrollTop = useRef(0);
 
