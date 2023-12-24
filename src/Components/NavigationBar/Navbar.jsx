@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import "./Navbar.css";
+import "/src/Components/NavigationBar/NavBar.css";
 export default function Navbar({isModalOpen,makeCircleBigger,makeCircleSmaller}) {
   const lastScrollTop = useRef(0);
 
